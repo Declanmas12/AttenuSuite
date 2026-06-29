@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%" height="100%">
+  <!-- Background Workspace Matched to AttenuX_Logo.jpg -->
+  <rect width="800" height="300" fill="#0b101d" />
+
+  <defs>
+    <!-- Dark Tech Grid Pattern -->
+    <pattern id="techGrid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#141c2e" stroke-width="1.2" />
+    </pattern>
+
+    <!-- Translucent Layers Blends -->
+    <linearGradient id="suiteLayer1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00f3ff" stop-opacity="0.2" /><stop offset="100%" stop-color="#00f3ff" stop-opacity="0.02" /></linearGradient>
+    <linearGradient id="suiteLayer2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#2af598" stop-opacity="0.2" /><stop offset="100%" stop-color="#ff0055" stop-opacity="0.05" /></linearGradient>
+    <linearGradient id="suiteLayer3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#ff0055" stop-opacity="0.2" /><stop offset="100%" stop-color="#ff0055" stop-opacity="0.01" /></linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Fill Background Tech Grid Matrix -->
+  <rect width="800" height="300" fill="url(#techGrid)" />
+
+  <!-- Corner Tech Frame Brackets -->
+  <path d="M 30,25 L 15,25 L 15,40" fill="none" stroke="#2e3a4e" stroke-width="1.5" />
+  <path d="M 770,275 L 785,275 L 785,260" fill="none" stroke="#2e3a4e" stroke-width="1.5" />
+
+  <!-- ================= COMBINED PARTICLE/WAVE DEVICE STACK ================= -->
+  <g transform="translate(15, 0) scale(0.58)">
+    <!-- Layer 1: Dashed Front Window (Electron Entry) -->
+    <polygon points="170,110 240,60 240,320 170,370" fill="url(#suiteLayer1)" stroke="#00f3ff" stroke-width="2" stroke-dasharray="6 3" />
+    
+    <!-- Layer 2: Transition Junction (Hybrid Space) -->
+    <polygon points="255,100 295,70 295,310 255,340" fill="url(#suiteLayer2)" stroke="#2af598" stroke-width="2.5" />
+    
+    <!-- Layer 3: Thick Sinking Substrate (X-Ray Attenuation Core) -->
+    <polygon points="310,90 410,20 410,260 310,330" fill="url(#suiteLayer3)" stroke="#ff0055" stroke-width="2" />
+
+    <!-- Incident Beam Vector -->
+    <path d="M -20,210 L 205,210" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+    <circle cx="205" cy="210" r="5" fill="#ffffff" filter="url(#glowEffect)" />
+
+    <!-- Electron Trajectory Track (Monte Carlo Scatter Path - Bottom Area) -->
+    <path d="M 205,210 L 225,235 L 255,210 L 280,250 L 305,225" 
+          fill="none" stroke="#2af598" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glowEffect)" />
+    
+    <!-- X-Ray Wave Track (Sinusoidal Attenuation Wave - Top Path to Exit) -->
+    <path d="M 205,210 Q 230,150 255,190 T 305,170 T 355,195 T 405,190 L 460,190" 
+          fill="none" stroke="#ff0055" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#glowEffect)" />
+    <polygon points="460,190 450,185 450,195" fill="#ff0055" filter="url(#glowEffect)" />
+  </g>
+
+  <!-- ================= TYPOGRAPHY PARADIGM ================= -->
+  <!-- Suite Master Typography Layout -->
+  <text x="315" y="155" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="78" fill="#ffffff" letter-spacing="-1">
+    Attenu<tspan fill="#00f3ff">S</tspan>uite
+  </text>
+
+  <!-- Subtitle System -->
+  <text x="320" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11" fill="#475569" letter-spacing="3.8">
+    PARTICLE &amp; WAVE SIMULATION ECOSYSTEM
+  </text>
+</svg>

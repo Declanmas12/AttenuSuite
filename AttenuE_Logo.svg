@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%" height="100%">
+  <rect width="800" height="300" fill="#0b101d" />
+
+  <defs>
+    <pattern id="techGrid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#141c2e" stroke-width="1.2" />
+    </pattern>
+
+    <linearGradient id="eLayer1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00f3ff" stop-opacity="0.2" /><stop offset="100%" stop-color="#00f3ff" stop-opacity="0.02" /></linearGradient>
+    <linearGradient id="eLayer2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#2af598" stop-opacity="0.25" /><stop offset="100%" stop-color="#2af598" stop-opacity="0.02" /></linearGradient>
+    <linearGradient id="eLayer3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#ff0055" stop-opacity="0.15" /><stop offset="100%" stop-color="#ff0055" stop-opacity="0.01" /></linearGradient>
+
+    <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="300" fill="url(#techGrid)" />
+
+  <path d="M 30,25 L 15,25 L 15,40" fill="none" stroke="#2e3a4e" stroke-width="1.5" />
+  <path d="M 770,275 L 785,275 L 785,260" fill="none" stroke="#2e3a4e" stroke-width="1.5" />
+
+  <g transform="translate(15, 0) scale(0.58)">
+    <polygon points="170,110 240,60 240,320 170,370" fill="url(#eLayer1)" stroke="#00f3ff" stroke-width="2" stroke-dasharray="6 3" />
+    
+    <polygon points="255,100 295,70 295,310 255,340" fill="url(#eLayer2)" stroke="#2af598" stroke-width="2.5" />
+    
+    <polygon points="310,90 410,20 410,260 310,330" fill="url(#eLayer3)" stroke="#ff0055" stroke-width="2" />
+
+    <path d="M -20,210 L 205,210" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+    <circle cx="205" cy="210" r="5" fill="#ffffff" filter="url(#glowEffect)" />
+
+    <path d="M 205,210 L 225,185 L 245,215 L 275,190 L 290,235 L 325,210 L 340,240 L 335,265" 
+          fill="none" stroke="#2af598" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glowEffect)" />
+    <circle cx="335" cy="265" r="4" fill="#ff0055" />
+
+    <path d="M 205,210 L 215,230 L 240,250 L 265,220 L 260,160 L 235,140 L 180,155 L 140,140" 
+          fill="none" stroke="#00f3ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.8" />
+  </g>
+
+  <text x="315" y="155" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="78" fill="#ffffff" letter-spacing="-1">
+    Attenu<tspan fill="#2af598">E</tspan>
+  </text>
+
+  <text x="320" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="12" fill="#475569" letter-spacing="4">
+    MONTE CARLO ELECTRON SIMULATOR
+  </text>
+</svg>
